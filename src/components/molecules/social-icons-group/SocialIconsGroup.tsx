@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "./SocialIconsGroup.module.css";
 import TelegramIcon from "../../atoms/icons/TelegramIcon";
-import TwitterIcon from "../../atoms/icons/TwitterIcon";
 
 interface SocialLink {
   href: string;
@@ -11,14 +10,9 @@ interface SocialLink {
 
 const socialLinks: SocialLink[] = [
   {
-    href: "https://t.me/blonect",
+    href: "https://t.me/PasquaFZ?text=Quiero%20comprar%20el%20curso%20de%20P2P",
     label: "Telegram",
     icon: <TelegramIcon color="#ffffff" size={20} />,
-  },
-  {
-    href: "https://twitter.com/blonect",
-    label: "Twitter",
-    icon: <TwitterIcon color="#ffffff" size={20} />,
   },
 ];
 
