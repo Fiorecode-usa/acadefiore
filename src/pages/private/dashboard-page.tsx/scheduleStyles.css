@@ -1,0 +1,91 @@
+/* Horarios informativos */
+.scheduleInfo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  gap: 32px;
+  margin-top: 60px;
+}
+
+.scheduleCard {
+  background: rgba(2, 26, 32, 0.8);
+  border-radius: 16px;
+  padding: 30px;
+  border: 2px solid var(--color-palette-5);
+  transition: all 0.3s ease;
+}
+
+.scheduleCard:hover {
+  border-color: var(--color-palette-3);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 32px rgba(0, 205, 130, 0.2);
+}
+
+.scheduleTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-palette-2);
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.scheduleText {
+  color: var(--color-text-primary);
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.scheduleText strong {
+  color: var(--color-palette-2);
+}
+
+.scheduleTimes {
+  color: var(--color-text-primary);
+  font-size: 1rem;
+  line-height: 1.8;
+  text-align: center;
+  background: rgba(0, 205, 130, 0.1);
+  padding: 16px;
+  border-radius: 12px;
+  border: 1px solid var(--color-palette-4);
+}
+
+.scheduleTimes strong {
+  color: var(--color-palette-3);
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+  .scheduleInfo {
+    grid-template-columns: 1fr;
+    margin-top: 40px;
+  }
+
+  .scheduleCard {
+    padding: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .scheduleInfo {
+    gap: 24px;
+  }
+
+  .scheduleCard {
+    padding: 20px;
+  }
+
+  .scheduleTitle {
+    font-size: 1.25rem;
+  }
+
+  .scheduleText {
+    font-size: 0.95rem;
+  }
+
+  .scheduleTimes {
+    font-size: 0.9rem;
+    padding: 12px;
+  }
+}

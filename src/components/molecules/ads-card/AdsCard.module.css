@@ -1,0 +1,195 @@
+.card {
+  background: rgba(2, 26, 32, 0.8);
+  border-radius: 16px;
+  padding: 24px;
+  border: 2px solid var(--color-palette-5);
+  transition: all 0.3s ease;
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.card:hover {
+  border-color: var(--color-palette-3);
+  box-shadow: 0 8px 32px rgba(0, 205, 130, 0.3);
+  transform: translateY(-4px);
+  background: rgba(2, 26, 32, 0.9);
+}
+
+.card.venta {
+  border-left: 4px solid var(--green-1-dark);
+}
+
+.card.compra {
+  border-left: 4px solid var(--orange-1-dark);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--black-1-light);
+}
+
+.type {
+  font-size: 1.5rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.card.venta .type {
+  color: var(--red-1-light);
+}
+
+.card.compra .type {
+  color: var(--color-palette-3);
+}
+
+.priceInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.priceLabel {
+  font-size: 0.75rem;
+  color: var(--color-text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.priceValue {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  margin-top: 4px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.infoRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+}
+
+.label {
+  font-size: 0.9rem;
+  color: var(--color-text-secondary);
+  font-weight: 500;
+}
+
+.value {
+  font-size: 0.9rem;
+  color: var(--color-text-primary);
+  text-align: right;
+}
+
+.email {
+  font-size: 0.9rem;
+  color: var(--color-palette-3);
+  font-weight: 600;
+}
+
+.warningBadge {
+  background: rgba(220, 53, 69, 0.1);
+  border: 1px solid var(--red-1-light);
+  border-radius: 8px;
+  padding: 12px;
+  margin-top: 12px;
+  text-align: center;
+  color: var(--red-1-light);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.sectionTitle {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  margin-bottom: 8px;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag {
+  background: rgba(0, 205, 130, 0.1);
+  border: 1px solid var(--color-palette-4);
+  border-radius: 8px;
+  padding: 6px 12px;
+  font-size: 0.85rem;
+  color: var(--color-palette-2);
+  font-weight: 500;
+}
+
+.countries {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.countryTag {
+  background: rgba(0, 205, 130, 0.1);
+  border: 1px solid var(--color-palette-3);
+  border-radius: 8px;
+  padding: 6px 12px;
+  font-size: 0.85rem;
+  color: var(--color-palette-2);
+  font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .card {
+    padding: 20px;
+  }
+
+  .type {
+    font-size: 1.25rem;
+  }
+
+  .priceValue {
+    font-size: 1.5rem;
+  }
+
+  .infoRow {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+  .value {
+    text-align: left;
+  }
+
+  .tags,
+  .countries {
+    gap: 6px;
+  }
+
+  .tag,
+  .countryTag {
+    font-size: 0.8rem;
+    padding: 4px 10px;
+  }
+}

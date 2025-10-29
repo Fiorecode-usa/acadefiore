@@ -1,0 +1,235 @@
+@import url('./scheduleStyles.css');
+
+.dashboard {
+  width: 100%;
+  min-height: 100vh;
+  padding: 40px 20px;
+  position: relative;
+  background: transparent;
+}
+
+.headerActions {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.actionButton {
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 0.5rem;
+  padding: 0.75rem 1.25rem;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.actionButton:hover {
+  background: rgba(255, 255, 255, 0.25);
+  border-color: rgba(255, 255, 255, 0.5);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.actionButton:active {
+  transform: translateY(0);
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.adsSection {
+  margin-bottom: 80px;
+}
+
+.sectionHeader {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.sectionDescription {
+  color: var(--color-text-primary);
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+  opacity: 0.9;
+  margin-top: 20px;
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  font-weight: 800;
+  background: linear-gradient(to right, var(--color-palette-2), var(--color-palette-3));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.cardsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 32px;
+}
+
+.videoSection {
+  margin-bottom: 80px;
+}
+
+.templatesSection {
+  margin-bottom: 80px;
+}
+
+.templatesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 32px;
+}
+
+.templateContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 100%;
+}
+
+.templateContainer > div:last-child {
+  flex: 1;
+}
+
+.templateSubtitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  text-align: center;
+  padding-bottom: 12px;
+}
+
+.downloadSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  margin-top: 40px;
+}
+
+.downloadButton {
+  background: linear-gradient(135deg, var(--color-palette-3), var(--color-palette-2));
+  border: none;
+  border-radius: 16px;
+  padding: 16px 40px;
+  color: #fff;
+  font-weight: 800;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  box-shadow: 0 8px 24px rgba(0, 205, 130, 0.3);
+}
+
+.downloadButton:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0, 205, 130, 0.4);
+}
+
+.downloadButton:focus {
+  outline: 3px solid var(--color-palette-3);
+  outline-offset: 3px;
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+  .sectionTitle {
+    font-size: 2rem;
+  }
+
+  .cardsGrid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .templatesGrid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .headerActions {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .dashboard {
+    padding: 30px 15px;
+  }
+
+  .headerActions {
+    gap: 12px;
+  }
+
+  .actionButton {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+
+  .sectionTitle {
+    font-size: 1.75rem;
+  }
+
+  .downloadSection {
+    padding: 40px 30px;
+  }
+
+  .downloadButton {
+    padding: 16px 36px;
+    font-size: 1.1rem;
+  }
+
+  .templateSubtitle {
+    font-size: 1.25rem;
+  }
+
+  .scheduleInfo {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .scheduleCard {
+    padding: 20px;
+  }
+
+  .scheduleTitle {
+    font-size: 1.25rem;
+  }
+
+  .scheduleText {
+    font-size: 0.95rem;
+  }
+
+  .scheduleTimes {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .sectionTitle {
+    font-size: 1.5rem;
+  }
+
+  .downloadButton {
+    padding: 14px 28px;
+    font-size: 1rem;
+  }
+}

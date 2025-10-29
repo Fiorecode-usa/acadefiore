@@ -1,0 +1,133 @@
+.ctaUrgencySection {
+  padding: 120px 0;
+  position: relative;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.title {
+  font-size: 3.2rem;
+  margin-bottom: 20px;
+  font-weight: 800;
+  background: linear-gradient(135deg, #ffffff, var(--color-palette-2), var(--color-palette-3));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1.2;
+}
+
+.subtitle {
+  color: var(--color-text-primary);
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+.ctaBox {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 50px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 2px solid var(--color-palette-3);
+  border-radius: 30px;
+  text-align: center;
+  box-shadow: 0 20px 60px rgba(93, 232, 156, 0.15);
+}
+
+.pricing {
+  margin: 40px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.originalPrice {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.originalLabel {
+  color: var(--color-text-secondary);
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+
+.originalAmount {
+  color: var(--color-text-secondary);
+  font-size: 1.2rem;
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+
+.currentPrice {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.currentLabel {
+  color: var(--color-text-primary);
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
+.currentAmount {
+  color: var(--color-palette-2);
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.guarantee {
+  margin-top: 30px;
+  color: var(--color-text-primary);
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+  .ctaUrgencySection {
+    padding: 80px 0;
+  }
+  
+  .title {
+    font-size: 2.6rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .ctaUrgencySection {
+    padding: 60px 0;
+  }
+  
+  .title {
+    font-size: 2.2rem;
+  }
+  
+  .subtitle {
+    font-size: 1rem;
+  }
+  
+  .ctaBox {
+    padding: 40px 30px;
+  }
+  
+  .currentAmount {
+    font-size: 2.8rem;
+  }
+}
+

@@ -1,0 +1,87 @@
+.container {
+  width: 100%;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.forgotPasswordLink {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -0.5rem;
+}
+
+.linkButton {
+  background: none;
+  border: none;
+  color: var(--color-palette-3);
+  font-size: 0.875rem;
+  cursor: pointer;
+  padding: 0;
+  text-decoration: underline;
+  transition: color 0.15s ease;
+}
+
+.linkButton:hover {
+  color: var(--color-palette-2);
+}
+
+.linkButton:focus {
+  outline: 2px solid var(--color-palette-3);
+  outline-offset: 2px;
+  border-radius: 0.25rem;
+}
+
+.signUpSection {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.signUpText {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.signUpText .linkButton {
+  color: #3b82f6;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.signUpText .linkButton:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .subtitle {
+    font-size: 0.8rem;
+  }
+
+  .form {
+    gap: 1rem;
+  }
+}
+

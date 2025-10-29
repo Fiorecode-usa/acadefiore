@@ -1,0 +1,172 @@
+@charset "UTF-8";
+:root {
+  
+  /* Textos */
+  --color-text-primary: #FFFFFF; 
+  --color-text-secondary: #7F8493; 
+
+  /* Palette Colors */
+  --color-palette-1: #C9FBD6;
+  --color-palette-2: #5DE89C;
+  --color-palette-3: #00CD82; 
+  --color-palette-4: #005256;
+  --color-palette-5: #003538;
+  --color-palette-6: #021a20; 
+  --color-palette-7: #011318;  
+
+  /* Accent Colors */
+  --green-1-light: #6fee8d;
+  --green-1-dark: #17c964;
+
+  --orange-1-light: #ffb457;
+  --orange-1-dark:#ff705b ;
+
+  --orange-2-light: #f5ac15;
+  --orange-2-dark: #ff7323;
+
+  --blue-1-light:#5ea2ef;
+  --blue-1-dark:#0072f5;
+
+  --pink-1-light:#ff72e1;
+  --pink-1-dark:#f54c7a;
+
+  --purple-1-light: #9747FF;
+  --purple-1-dark: #7238be;
+
+  --black-1-light: #313131;
+  --black-1-middle: #252525;
+  --black-1-dark: #111111;
+
+  --red-1-light: #dc3545;
+  --red-1-dark:#99202c;
+
+  --black: #000000;
+  --white: #ffffff;
+  
+  /* Tipografía */
+  --tipo-principal: "Poppins", sans-serif;
+  --tipo-secundaria: "Poppins", sans-serif;
+
+  /* Tamaño máximo */
+  --max-width :1400px;
+}
+
+/* Reseteamos los margin y paddings de todas las etiquetas */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  vertical-align: baseline;
+}
+
+/* Evitamos problemas con las imagenes */
+img,
+picture,
+video,
+iframe,
+figure {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+  /* opcional */
+  -o-object-fit: cover;
+  object-fit: cover;
+  /* opcional */
+  -o-object-position: center center;
+  object-position: center center;
+}
+
+/* Reseteamos los enlaces para funcionar como cajas... */
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
+}
+
+/* ... excepto los que se encuentran en párrafos */
+p a {
+  display: inline;
+}
+
+/* Quitamos los puntos de los <li> */
+li {
+  list-style-type: none;
+}
+
+/* Configuramos anclas suaves */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Configuramos el texto que seleccionamos */
+::-moz-selection {
+  background-color: rgba(44, 44, 44, 0.2);
+}
+::selection {
+  background-color: rgba(88, 88, 88, 0.2);
+}
+
+/* Nivelamos problemas de tipografías y colocación de formularios */
+form,
+input,
+textarea,
+select,
+button,
+label {
+  font-family: inherit;
+  font-size: inherit;
+  -webkit-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+  background-color: transparent;
+  color: inherit;
+  display: block;
+}
+
+button{
+  outline: none;
+}
+
+/* Reseteamos las tablas */
+table,
+tr,
+td {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Evitamos problemas con los SVG */
+svg {
+  width: 100%;
+  display: block;
+  fill: currentColor;
+}
+
+/* Configuramos la tipografía, fondo y overflow */
+body {
+  user-select: auto; 
+  min-height: 100vh;
+  font-size: 100%;
+  font-family: var(--tipo-principal);
+  color: #ffffff;
+  line-height: 1.6;
+  position: relative;
+  /* opcional */
+  -webkit-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+  /* opcional */
+  font-smooth: always;
+  /* opcional */
+  -webkit-font-smoothing: antialiased;
+  /* opcional */
+  -moz-osx-font-smoothing: grayscale;
+  
+  -webkit-tap-highlight-color: transparent;
+
+  overflow-x: hidden;
+  background-color: var(--color-palette-7);
+}

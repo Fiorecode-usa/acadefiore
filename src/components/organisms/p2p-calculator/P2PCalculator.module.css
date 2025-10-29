@@ -1,0 +1,217 @@
+.calculatorContainer {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px;
+  background: rgba(2, 26, 32, 0.8);
+  border-radius: 20px;
+  border: 2px solid var(--color-palette-5);
+  margin-bottom: 60px;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--color-text-primary);
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.subtitle {
+  color: var(--color-text-primary);
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+  opacity: 0.9;
+}
+
+.inputsSection {
+  margin-bottom: 40px;
+}
+
+.inputGroup {
+  margin-bottom: 24px;
+}
+
+.priceControls {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.label {
+  display: block;
+  color: var(--color-text-primary);
+  font-weight: 600;
+  margin-bottom: 8px;
+  font-size: 1rem;
+}
+
+.input {
+  width: 100%;
+  padding: 14px 18px;
+  background: rgba(0, 0, 0, 0.3);
+  border: 2px solid var(--color-palette-5);
+  border-radius: 12px;
+  color: var(--color-text-primary);
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--color-palette-3);
+  box-shadow: 0 0 0 3px rgba(0, 205, 130, 0.1);
+}
+
+.input::placeholder {
+  color: var(--color-text-secondary);
+}
+
+.resultsSection {
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.resultsTitle {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.summaryCard {
+  background: rgba(0, 205, 130, 0.1);
+  border: 2px solid var(--color-palette-3);
+  border-radius: 16px;
+  padding: 28px;
+  margin-bottom: 24px;
+}
+
+.summaryItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+}
+
+.summaryLabel {
+  color: var(--color-text-primary);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.summaryValue {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.summaryValue.positive {
+  color: var(--color-palette-2);
+}
+
+.summaryValue.negative {
+  color: var(--red-1-light);
+}
+
+.breakdownCard {
+  background: var(--black-1-middle);
+  border: 2px solid var(--color-palette-5);
+  border-radius: 16px;
+  padding: 24px;
+  margin-bottom: 20px;
+}
+
+.breakdownTitle {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--color-palette-2);
+  margin-bottom: 20px;
+}
+
+.breakdownRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.breakdownRow:last-child {
+  border-bottom: none;
+}
+
+.totalFee,
+.finalProfit {
+  border-top: 2px solid var(--color-palette-3);
+  padding-top: 16px;
+  margin-top: 12px;
+}
+
+.breakdownLabel {
+  color: var(--color-text-secondary);
+  font-size: 1rem;
+}
+
+.breakdownValue {
+  color: var(--color-text-primary);
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.finalProfit .breakdownValue {
+  font-size: 1.4rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .calculatorContainer {
+    padding: 30px 20px;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .priceControls {
+    grid-template-columns: 1fr;
+  }
+
+  .summaryItem {
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+  }
+
+  .breakdownRow {
+    flex-direction: column;
+    gap: 4px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.75rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .summaryValue {
+    font-size: 1.25rem;
+  }
+}
