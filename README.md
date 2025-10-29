@@ -1,7 +1,7 @@
 # FZ Academy - Curso de P2P
 
 <div align="center">
-  <img src="src/assets/images/Isotipo2D.png" alt="FZ Academy Logo" width="150"/>
+  <img src="src/assets/images/isotipo-2d.png" alt="FZ Academy Logo" width="150"/>
   
   **Educación de calidad a precio justo • Resultados reales garantizados**
   
