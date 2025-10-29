@@ -38,7 +38,7 @@
 /* Responsive */
 @media (max-width: 768px) {
   .notification {
-    top: 80px;
+    top: 110px;
     right: 20px;
     max-width: 320px;
     padding: 12px 20px;
