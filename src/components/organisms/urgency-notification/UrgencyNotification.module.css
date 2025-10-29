@@ -56,8 +56,8 @@
 
 @media (max-width: 480px) {
   .notification {
-    top: 70px;
-    right: 15px;
+    top: 90px;
+    right: 50px;
     max-width: 280px;
     padding: 10px 15px;
     gap: 10px;
