@@ -1,17 +1,22 @@
 .page {
   width: 100%;
   min-height: 100vh;
-  padding: 40px 20px;
-  position: relative;
-  background: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
 }
 
 .headerActions {
   display: flex;
   justify-content: center;
-  gap: 16px;
-  margin-bottom: 40px;
   flex-wrap: wrap;
+  width: 100%;
+  max-width: var(--max-width);
+  gap: 16px;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .actionButton {
@@ -39,9 +44,8 @@
 }
 
 .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
+  width: 100%;
+  max-width: var(--max-width);
 }
 
 .calculatorSection {
@@ -49,24 +53,5 @@
 }
 
 /* Responsive */
-@media (max-width: 768px) {
-  .page {
-    padding: 30px 15px;
-  }
-
-  .headerActions {
-    justify-content: center;
-  }
-
-  .actionButton {
-    padding: 0.65rem 1.1rem;
-    font-size: 0.9rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .page {
-    padding: 20px 10px;
-  }
-}
+@media (max-width: 768px) {}
 

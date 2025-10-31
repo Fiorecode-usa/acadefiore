@@ -1,12 +1,23 @@
-.calculatorContainer {
+.calculatorContainerMaster {
   width: 100%;
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.calculatorContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 950px;
   background: rgba(2, 26, 32, 0.8);
   border-radius: 20px;
   border: 2px solid var(--color-palette-5);
-  margin-bottom: 60px;
+  padding:20px;
 }
 
 .title {
@@ -26,17 +37,50 @@
 }
 
 .inputsSection {
-  margin-bottom: 40px;
+  width: 100%;
+}
+
+.toggleGroup {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.toggleButton {
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 2px solid var(--color-palette-5);
+  background: rgba(0, 0, 0, 0.3);
+  color: var(--color-text-primary);
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.toggleButton:hover {
+  border-color: var(--color-palette-3);
+}
+
+.toggleButton.active {
+  background: rgba(0, 205, 130, 0.15);
+  border-color: var(--color-palette-3);
 }
 
 .inputGroup {
-  margin-bottom: 24px;
+  margin-bottom: 12px;
 }
 
 .priceControls {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  justify-content: stretch;
   gap: 20px;
+}
+
+.priceControls .inputGroup {
+  flex: 1 1 0;
+  min-width: 0; 
 }
 
 .label {
@@ -44,10 +88,11 @@
   color: var(--color-text-primary);
   font-weight: 600;
   margin-bottom: 8px;
-  font-size: 1rem;
+  font-size: 16px;
 }
 
 .input {
+  display: flex;
   width: 100%;
   padding: 14px 18px;
   background: rgba(0, 0, 0, 0.3);
@@ -57,6 +102,15 @@
   font-size: 1.1rem;
   font-weight: 600;
   transition: all 0.3s ease;
+}
+
+.inputWithAdornment {
+  padding-right: 70px;
+}
+
+.input:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
 }
 
 .input:focus {
@@ -71,6 +125,13 @@
 
 .resultsSection {
   animation: fadeIn 0.5s ease-in;
+}
+
+.summaryContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
 }
 
 @keyframes fadeIn {
@@ -127,6 +188,8 @@
 }
 
 .breakdownCard {
+  flex: 1 1 0;
+  min-width: 0;
   background: var(--black-1-middle);
   border: 2px solid var(--color-palette-5);
   border-radius: 16px;
@@ -175,43 +238,310 @@
   font-size: 1.4rem;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .calculatorContainer {
-    padding: 30px 20px;
-  }
-
-  .title {
-    font-size: 2rem;
-  }
-
-  .priceControls {
-    grid-template-columns: 1fr;
-  }
-
-  .summaryItem {
-    flex-direction: column;
-    gap: 8px;
-    text-align: center;
-  }
-
-  .breakdownRow {
-    flex-direction: column;
-    gap: 4px;
-    text-align: center;
-  }
+/* Lots (compras múltiples) */
+.lotsSection {
+  margin-top: 16px;
 }
 
-@media (max-width: 480px) {
+.lotsHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.addLotButton {
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 2px solid var(--color-palette-5);
+  background: rgba(0, 0, 0, 0.3);
+  color: var(--color-text-primary);
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.addLotButton:hover {
+  border-color: var(--color-palette-3);
+}
+
+.lotRows {
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.lotRow {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.inputAdornmentWrap {
+  position: relative;
+}
+
+.inputAdornmentLeft {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--color-palette-3);
+  font-weight: 300;
+  font-size: 12px;
+  pointer-events: none;
+  opacity: 0.9;
+}
+
+.buttonGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.removeLotButton {
+  padding: 14px 18px; /* igual que .input */
+  border-radius: 12px; /* igual que .input */
+  border: 2px solid var(--red-1-light);
+  background: rgba(0, 0, 0, 0.3);
+  color: var(--red-1-light);
+  font-weight: 700;
+  font-size: 1.1rem; /* igual que .input */
+  cursor: pointer;
+  line-height: 1.2;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lotsSummary {
+  background: var(--black-1-middle);
+  border: 2px dashed var(--color-palette-5);
+  border-radius: 12px;
+  padding: 12px 16px;
+}
+
+.inlineLabelRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.switchLabel {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--color-text-secondary);
+  font-weight: 600;
+}
+
+.modeSelect {
+  padding: 14px 18px; /* igual que .input */
+  background: rgba(0,0,0,0.3);
+  border: 2px solid var(--color-palette-5);
+  border-radius: 12px; /* igual que .input */
+  color: var(--color-text-primary);
+  font-weight: 600;
+  font-size: 1.1rem; /* igual que .input */
+  transition: all 0.2s ease;
+  width: 100%;
+}
+
+.modeSelectWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 150px;
+}
+
+.modeLabel {
+  color: #FFFFFF;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.modeSelect:hover {
+  border-color: var(--color-palette-3);
+}
+
+.modeSelect:focus {
+  outline: none;
+  border-color: var(--color-palette-3);
+  box-shadow: 0 0 0 3px rgba(0, 205, 130, 0.1);
+}
+
+.rightPane {
+  width: 100%;
+  flex: 1 1 auto;
+  max-width: 950px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .calculatorContainerMaster {
+    gap: 16px;
+    padding: 0 16px;
+  }
+
+  .calculatorContainer {
+    padding: 16px;
+    border-radius: 16px;
+  }
+
   .title {
-    font-size: 1.75rem;
+    font-size: 1.8rem;
+    margin-bottom: 12px;
   }
 
   .subtitle {
     font-size: 1rem;
+    margin-bottom: 24px;
+  }
+
+  .toggleGroup {
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 16px;
+  }
+
+  .toggleButton {
+    width: 100%;
+    padding: 12px;
+    font-size: 0.95rem;
+  }
+
+  .priceControls {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .priceControls .inputGroup {
+    flex: 1 1 auto;
+  }
+
+  .label {
+    font-size: 14px;
+    margin-bottom: 6px;
+  }
+
+  .input {
+    padding: 12px 16px;
+    font-size: 1rem;
+  }
+
+  .inputWithAdornment {
+    padding-right: 65px;
+  }
+
+  .resultsTitle {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+
+  .summaryCard {
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  .summaryItem {
+    padding: 10px 0;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .summaryLabel {
+    font-size: 1rem;
   }
 
   .summaryValue {
-    font-size: 1.25rem;
+    font-size: 1.3rem;
+  }
+
+  .summaryContainer {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .breakdownCard {
+    padding: 20px;
+    margin-bottom: 16px;
+  }
+
+  .breakdownTitle {
+    font-size: 1.1rem;
+    margin-bottom: 16px;
+  }
+
+  .breakdownRow {
+    padding: 10px 0;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+  .breakdownLabel {
+    font-size: 0.9rem;
+  }
+
+  .breakdownValue {
+    font-size: 1rem;
+  }
+
+  .finalProfit .breakdownValue {
+    font-size: 1.2rem;
+  }
+
+  .lotsHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .addLotButton {
+    width: 100%;
+    padding: 12px;
+    font-size: 0.95rem;
+  }
+
+  .lotRow {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .lotRow .inputGroup:last-of-type {
+    margin-bottom: 0;
+  }
+
+  .lotRow .switchLabel {
+    margin-top: 0 !important;
+    padding-top: 8px;
+  }
+
+  .modeSelectWrap {
+    width: 100%;
+  }
+
+  .buttonGroup {
+    width: 100%;
+  }
+
+  .removeLotButton {
+    width: 100%;
+    padding: 12px 16px;
+  }
+
+  .inlineLabelRow {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .switchLabel {
+    font-size: 0.9rem;
+  }
+
+  .inputAdornmentLeft {
+    right: 12px;
+    font-size: 11px;
   }
 }
