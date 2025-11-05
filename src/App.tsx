@@ -18,11 +18,15 @@ import AuthPage from './pages/public/auth-page/AuthPage'
 import DashboardPage from './pages/private/dashboard-page.tsx/DashboardPage'
 import CalculatorPage from './pages/private/calculator-page.tsx/CalculatorPage'
 
+//Google Analytics Tracker
+import PageViewTracker from './components/atoms/ga-tracker/PageViewTracker'
+
 function App() {
 
   return (
     <>
       <BrowserRouter>
+        <PageViewTracker />
         <Routes>
 
           {/* GRUPO DE RUTAS PÚBLICAS - LANDING */}
