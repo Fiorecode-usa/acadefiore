@@ -55,7 +55,7 @@
 }
 
 .number {
-  font-size: 3rem;
+  font-size: 20px;
   font-weight: 800;
   background: linear-gradient(135deg, var(--color-palette-2), var(--color-palette-3));
   -webkit-background-clip: text;

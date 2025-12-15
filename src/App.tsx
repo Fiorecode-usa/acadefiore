@@ -5,6 +5,7 @@ import './App.module.css'
 import LandingTemplate from './components/templates/landing-template/LandingTemplate'
 import AuthTemplate from './components/templates/auth-template/AuthTemplate'
 import DashboardTemplate from './components/templates/dashboard-template/DashboardTemplate'
+import CourseTemplate from './components/templates/course-template/CourseTemplate'
 
 //Routes
 import PrivateRoute from './routes/PrivateRoute'
@@ -17,6 +18,8 @@ import AuthPage from './pages/public/auth-page/AuthPage'
 //Pages - Private
 import DashboardPage from './pages/private/dashboard-page.tsx/DashboardPage'
 import CalculatorPage from './pages/private/calculator-page.tsx/CalculatorPage'
+import TradingCoursePage from './pages/private/trading-course-page/TradingCoursePage'
+import P2PCoursePage from './pages/private/p2p-course-page/P2PCoursePage'
 
 //Google Analytics Tracker
 import PageViewTracker from './components/atoms/ga-tracker/PageViewTracker'
@@ -44,20 +47,13 @@ function App() {
           </Route>
 
           {/* RUTAS PRIVADAS - Requiere autenticación */}
-          <Route path="/dashboard" element={
-            <PrivateRoute>
-              <DashboardTemplate />
-            </PrivateRoute>
-          }>
+          <Route path="/dashboard" element={<PrivateRoute><DashboardTemplate /></PrivateRoute>}>
             <Route index element={<DashboardPage/>} />
-          </Route>
-
-          <Route path="/calculator" element={
-            <PrivateRoute>
-              <DashboardTemplate />
-            </PrivateRoute>
-          }>
-            <Route index element={<CalculatorPage/>} />
+            <Route path="calculator" element={<CalculatorPage/>} />
+            <Route path="course" element={<CourseTemplate />}>
+              <Route path="trading-module-1" element={<TradingCoursePage/>} />
+              <Route path="p2p" element={<P2PCoursePage/>} />
+            </Route>
           </Route>
 
           {/* CATCH-ALL 404: Redirige a la landing si la ruta no existe */}

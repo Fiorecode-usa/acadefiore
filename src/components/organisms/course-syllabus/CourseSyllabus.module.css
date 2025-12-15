@@ -1,0 +1,258 @@
+.syllabus {
+  background: rgba(2, 26, 32, 0.6);
+  border-radius: 16px;
+  padding: 32px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 40px;
+}
+
+/* En desktop dentro del sidebarDesktop, ajustar estilos */
+@media (min-width: 969px) {
+  .syllabus {
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    margin-bottom: 0;
+  }
+}
+
+/* En móvil dentro del sidebar, ajustar estilos */
+@media (max-width: 968px) {
+  .syllabus {
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    padding: 20px 24px;
+    margin-bottom: 0;
+  }
+
+  .header {
+    display: none;
+  }
+}
+
+.header {
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--color-text-primary);
+  margin: 0 0 8px 0;
+  background: linear-gradient(135deg, var(--color-palette-2), var(--color-palette-3));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.subtitle {
+  color: var(--color-text-secondary);
+  font-size: 1rem;
+  margin: 0;
+}
+
+.sections {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  overflow-y: auto;
+  overflow-x: visible;
+  padding-right: 8px;
+  min-height: 0;
+}
+
+.sections::-webkit-scrollbar {
+  width: 8px;
+}
+
+.sections::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 4px;
+}
+
+.sections::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+}
+
+.sections::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.section {
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: all 0.3s ease;
+  min-height: fit-content;
+}
+
+.section:hover {
+  border-color: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.sectionHeader {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 24px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.3s ease;
+}
+
+.sectionHeader:hover {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.sectionTitleContainer {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex: 1;
+}
+
+.sectionNumber {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, var(--red-1-light), var(--red-1-dark));
+  color: white;
+  font-weight: 800;
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.sectionTitle {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  margin: 0;
+  line-height: 1.4;
+}
+
+.expandIcon {
+  font-size: 0.8rem;
+  color: var(--color-text-secondary);
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+}
+
+.expandIcon.expanded {
+  transform: rotate(180deg);
+}
+
+.lessons {
+  padding: 0 24px 16px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.lesson {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: left;
+  width: 100%;
+  border-left: 3px solid transparent;
+}
+
+.lesson:hover {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: rgba(255, 255, 255, 0.1);
+  transform: translateX(4px);
+}
+
+.lesson.selected {
+  background: rgba(220, 53, 69, 0.15);
+  border-left-color: var(--red-1-light);
+  border-color: rgba(220, 53, 69, 0.3);
+}
+
+.lessonIcon {
+  font-size: 0.8rem;
+  color: var(--color-text-secondary);
+  flex-shrink: 0;
+  width: 20px;
+  text-align: center;
+}
+
+.lesson.selected .lessonIcon {
+  color: var(--red-1-light);
+}
+
+.lessonTitle {
+  flex: 1;
+  font-size: 0.95rem;
+  color: var(--color-text-primary);
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.lesson.selected .lessonTitle {
+  color: var(--color-text-primary);
+  font-weight: 600;
+}
+
+.lessonDuration {
+  font-size: 0.85rem;
+  color: var(--color-text-secondary);
+  flex-shrink: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .syllabus {
+    padding: 24px;
+  }
+
+  .title {
+    font-size: 1.75rem;
+  }
+
+  .sectionHeader {
+    padding: 16px 20px;
+  }
+
+  .sectionTitle {
+    font-size: 1.1rem;
+  }
+
+  .sectionNumber {
+    width: 32px;
+    height: 32px;
+    font-size: 0.9rem;
+  }
+
+  .lessons {
+    padding: 0 20px 12px 20px;
+  }
+
+  .lesson {
+    padding: 10px 14px;
+  }
+
+  .lessonTitle {
+    font-size: 0.9rem;
+  }
+}
+

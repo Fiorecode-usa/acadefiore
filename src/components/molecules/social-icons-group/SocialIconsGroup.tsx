@@ -10,7 +10,7 @@ interface SocialLink {
 
 const socialLinks: SocialLink[] = [
   {
-    href: "https://t.me/PasquaFZ?text=Quiero%20comprar%20el%20curso%20de%20P2P",
+    href: "https://t.me/PasquaFZ?text=Hola%20necesito%20ayuda",
     label: "Telegram",
     icon: <TelegramIcon color="#ffffff" size={20} />,
   },

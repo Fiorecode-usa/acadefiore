@@ -1,0 +1,238 @@
+.sidebarDesktop {
+  width: 400px;
+  min-width: 400px;
+  background: var(--color-palette-6);
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  overflow-y: auto;
+  overflow-x: hidden;
+  position: fixed;
+  left: 0;
+  top: 87px;
+  bottom: 0;
+  z-index: 2000;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.sidebarDesktop::-webkit-scrollbar {
+  width: 8px;
+}
+
+.sidebarDesktop::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 4px;
+}
+
+.sidebarDesktop::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+}
+
+.sidebarDesktop::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.sidebarToggle {
+  display: none;
+}
+
+.sidebarOverlay {
+  display: none;
+}
+
+.sidebarMobile {
+  display: none;
+}
+
+.sidebarHeader {
+  display: none;
+}
+
+.sidebarTitle {
+  display: none;
+}
+
+.sidebarClose {
+  display: none;
+}
+
+.sidebarContent {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/* Responsive */
+@media screen and (max-width: 968px) {
+  .sidebarDesktop {
+    display: none;
+  }
+
+  .sidebarToggle {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    position: fixed;
+    top: 110px;
+    left: 40px;
+    z-index: 100;
+    background: linear-gradient(135deg, var(--red-1-light), var(--red-1-dark));
+    border: none;
+    border-radius: 12px;
+    padding: 12px 20px;
+    color: white;
+    font-weight: 700;
+    font-size: 0.95rem;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+  }
+
+  .sidebarToggle:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+  }
+
+  .sidebarToggleIcon {
+    font-size: 1.2rem;
+  }
+
+  .sidebarToggleText {
+    font-size: 0.95rem;
+  }
+
+  .sidebarOverlay {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 999;
+    backdrop-filter: blur(4px);
+  }
+
+  .sidebarMobile {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 80px;
+    left: 0;
+    bottom: 0;
+    width: 85%;
+    max-width: 400px;
+    background: var(--color-palette-6);
+    z-index: 10000;
+    box-shadow: 4px 0 24px rgba(0, 0, 0, 0.5);
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 0;
+    border-radius: 0;
+    border: none;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+  }
+
+  .sidebarMobile.open {
+    transform: translateX(0);
+  }
+
+  .sidebarMobile::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .sidebarMobile::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05);
+  }
+
+  .sidebarMobile::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+  }
+
+  .sidebarMobile::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.3);
+  }
+
+  .sidebarHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 24px;
+    background: rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    backdrop-filter: blur(10px);
+  }
+
+  .sidebarTitle {
+    display: block;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--color-text-primary);
+    margin: 0;
+    background: linear-gradient(135deg, var(--color-palette-2), var(--color-palette-3));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .sidebarClose {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: var(--color-text-primary);
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+  }
+
+  .sidebarClose:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.1);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sidebarToggle {
+    top: 100px;
+    left: 20px;
+    padding: 10px 16px;
+    font-size: 0.9rem;
+  }
+
+  .sidebarToggleIcon {
+    font-size: 1.1rem;
+  }
+
+  .sidebarMobile {
+    width: 90%;
+    max-width: 350px;
+    top: 70px;
+  }
+
+  .sidebarHeader {
+    padding: 16px 20px;
+  }
+
+  .sidebarTitle {
+    font-size: 1.1rem;
+  }
+
+  .sidebarClose {
+    width: 32px;
+    height: 32px;
+    font-size: 1.1rem;
+  }
+}
+
+

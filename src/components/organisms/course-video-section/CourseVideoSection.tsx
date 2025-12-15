@@ -95,7 +95,7 @@ export const CourseVideoSection: React.FC = () => {
               preload="metadata"
               onContextMenu={handleContextMenu}
             >
-              <source src="https://impkable.com/wp-content/uploads/2025/10/curso-p2p.mp4" type="video/mp4" />
+              <source src={import.meta.env.VITE_URL_CLOUDFRONT+"cursos/p2p/1-arbitraje-p2p.mp4"} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
             {userEmail && (

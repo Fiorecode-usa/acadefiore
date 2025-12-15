@@ -20,7 +20,7 @@
 }
 
 .sectionTitle h2 {
-  font-size: 3.2rem;
+  font-size: 48px;
   margin-bottom: 20px;
   font-weight: 800;
   background: linear-gradient(to top, var(--color-palette-2), var(--color-palette-3), var(--color-palette-4));
@@ -32,9 +32,9 @@
 
 .sectionTitle p {
   color: var(--color-text-primary);
-  max-width: 700px;
+  max-width: 1200px;
   margin: 0 auto;
-  font-size: 1.2rem;
+  font-size: 18px;
   opacity: 0.9;
 }
 

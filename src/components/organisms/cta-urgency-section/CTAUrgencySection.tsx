@@ -84,10 +84,10 @@ export const CTAUrgencySection: React.FC<CTAUrgencySectionProps> = ({
           <PrimaryButton 
             text={buttonText}
             variant="primary"
-            onClick={() => window.open("https://t.me/PasquaFZ?text=Quiero%20comprar%20el%20curso%20de%20P2P", "_blank")}
+            onClick={() => window.open("https://t.me/PasquaFZ?text=Hola%20quiero%20comprar%20el%20curso", "_blank")}
           />
 
-          <p className={styles.guarantee}>✓ Garantía 30 días - Te ayudo a generar ingresos o evalúo tu caso</p>
+<p className={styles.guarantee}>✓ Garantía de Soporte y Aprendizaje - Te ayudo a dominar las bases o evaluamos tu caso</p>
         </motion.div>
       </div>
     </motion.section>

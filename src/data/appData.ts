@@ -31,81 +31,81 @@ export const problemSolutionData = {
     ]
   },
   after: {
-    title: "AHORA - Con El Curso de P2P",
+    title: "AHORA - Con El Curso de Trading de Futuros y Criptomonedas",
     features: [
       {
-        title: "Menos Horas, Más Dinero",
-        description: "Genera $100+ diarios trabajando solo unas horas desde la comodidad de tu hogar"
+          title: "Bases para Generar Ingresos Extra",
+          description: "Adquiere los fundamentos técnicos para empezar a operar y generar ingresos adicionales trabajando desde tu hogar."
       },
       {
-        title: "Libertad de Tiempo",
-        description: "Trabaja cuando quieras, desde donde quieras. Controla tu propio tiempo"
+          title: "Control de Tu Rutina",
+          description: "Aprende a operar cuando quieras y desde donde quieras. Empieza a tomar control de tu propio tiempo."
       },
       {
-        title: "Enfócate en Lo Que Te Hace Feliz",
-        description: "Con tiempo libre para tu familia, descansar y perseguir tus verdaderos sueños"
+          title: "Enfócate en Lo Que Te Importa",
+          description: "Aprovecha el tiempo recuperado para tu familia, descansar o perseguir tus verdaderos intereses personales."
       },
       {
-        title: "Independencia Financiera",
-        description: "Construye un futuro donde tu dinero trabaje para ti, no tú para el dinero"
+          title: "El Primer Paso Hacia Tu Meta",
+          description: "Construye el conocimiento esencial que te llevará a la meta de obtener una mayor libertad financiera a largo plazo."
       }
-    ]
+  ]
   }
 };
 
 // Testimonials Data
 export const testimonialsData = {
-  title: "Casos de Éxito Real",
-  subtitle: "Estudiantes que transformaron su vida con nuestro curso de P2P",
+  title: "Nuestro Compromiso y Fundamentos",
+  subtitle: "Lo que garantizamos que aprenderás en el Módulo 1",
   testimonials: [
-    {
-      name: "Carlos Rodríguez",
-      role: "Emigrante en Miami",
-      content: "Antes trabajaba de mesero 12 horas al día por $1,500 al mes. Ahora con el método P2P genero entre $130 y $200 diarios haciendo dos ciclos desde casa. Este curso cambió mi vida completamente."
-    },
-    {
-      name: "María González",
-      role: "Madre soltera de 2 hijos",
-      content: "Como madre soltera necesitaba flexibilidad y más ingresos para mis hijos. Con este curso puedo estar con ellos y generar más que en mi trabajo anterior. Fue la mejor inversión que he hecho en mi vida."
-    },
-    {
-      name: "Juan Pérez",
-      role: "Vive en Latinoamérica",
-      content: "Vivo en Latinoamérica pero ahora gano como si viviera en Estados Unidos. Con el método P2P genero entre $2,500 y $3,500 mensuales desde casa. Ahora vivo muy bien. Lo recomiendo."
-    }
+      {
+          name: "Compromiso de Conocimiento",
+          role: "Base Sólida",
+          content: "Te guiaremos paso a paso a través de la configuración de las plataformas (Binance/Blofin) y los conceptos esenciales del mercado, incluso sin experiencia previa."
+      },
+      {
+          name: "Enfoque en la Seguridad",
+          role: "Gestión de Riesgo",
+          content: "Dominarás la Gestión de Posición, el cálculo de PNL/ROI y cómo usar las órdenes Stop Loss para operar de forma responsable, que es la clave del éxito a largo plazo."
+      },
+      {
+          name: "Aprendizaje Detallado",
+          role: "Contenido Exhaustivo",
+          content: "Accede a 3 horas de contenido en video, detallando cada tema para asegurar que entiendas los fundamentos antes de pasar a la práctica."
+      }
   ]
 };
 
 // Course Inclusions Data
 export const courseInclusionsData = {
-  title: "¿Qué Incluye El Curso?",
-  subtitle: "Todo lo que necesitas para generar $100+ diarios con P2P",
+  title: "Módulo 1 de Trading + Curso P2P: ¡Todo Incluido!",
+  subtitle: "Obtén la base sólida para Trading de Futuros y el Curso de P2P como un Bonus Exclusivo.",
   inclusions: [
-    {
-      icon: "🎬",
-      title: "Video de 1 Hora",
-      description: "Incluye un video de 1 hora explicando todo lo que se desde cero"
-    },
-    {
-      icon: "👥",
-      title: "Acceso a Mi Comunidad Privada",
-      description: "Acceso exclusivo a mi comunidad privada donde comparto estrategias y respondo tus preguntas"
-    },
-    {
-      icon: "📱",
-      title: "App y Herramientas",
-      description: "Todas las apps y herramientas para empezar a trabajar incluso si están bloqueadas en tu país"
-    },
-    {
-      icon: "🔄",
-      title: "Soporte en Mi Comunidad",
-      description: "Soporte directo en la comunidad para resolver todas tus dudas y guiarte en tu proceso"
-    },
-    {
-      icon: "💰",
-      title: "Calculadora de Ganancias",
-      description: "Calculadora profesional para calcular tus ganancias, pérdidas y comisiones de Binance en tiempo real"
-    }
+      {
+          icon: "🎬",
+          title: "+2 Horas de Video",
+          description: "Acceso inmediato a todo el contenido del Módulo 1 de Trading de Futuros, con una duración total de **1 hora, 55 minutos y 32 segundos** de lecciones detalladas."
+      },
+      {
+          icon: "🎁",
+          title: "BONUS GRATUITO: Curso Completo de P2P",
+          description: "Recibe el método de P2P completo 1Hora de video, un sistema comprobado para generar ingresos adicionales de forma consistente, totalmente gratis con tu compra."
+      },
+      {
+          icon: "📱",
+          title: "Plataformas y Herramientas Esenciales",
+          description: "Todas las guías para descargar, instalar y configurar las aplicaciones y herramientas clave (como Binance y Blofin) para empezar a operar en ambos mundos."
+      },
+      {
+          icon: "🔄",
+          title: "Soporte Directo en la Comunidad",
+          description: "Soporte continuo y directo dentro de la comunidad para resolver todas tus dudas y guiarte en tu proceso de aprendizaje en Trading y P2P."
+      },
+      {
+          icon: "💰",
+          title: "Calculadora de Trading Profesional",
+          description: "Calculadora avanzada para ayudarte a estimar tus ganancias, pérdidas y comisiones en el arbitraje de P2P en tiempo real."
+      }
   ]
 };
 
@@ -113,8 +113,8 @@ export const courseInclusionsData = {
 export const ctaUrgencyData = {
   title: "No Pierdas Esta Oportunidad",
   subtitle: "Únete a los estudiantes que ya están transformando su vida financiera",
-  price: "$97",
-  originalPrice: "$297",
+  price: "$25",
+  originalPrice: "$40",
   buttonText: "Comprar Curso Ahora",
   urgencyLabel: "Oferta termina en:",
   urgencyTime: "48:00:00"
@@ -124,36 +124,31 @@ export const ctaUrgencyData = {
 export const statsData = {
   stats: [
     {
-      number: "133+",
-      label: "Estudiantes Activos",
-      icon: "👥"
+      number: "Lanzamiento",
+      label: "Academia Recién Abierta",
+      icon: "🚀" // Icono de lanzamiento
+    },
+    {
+      number: "Módulo 1",
+      label: "Fundamentos Esenciales Incluidos",
+      icon: "📚" // Icono de conocimiento o módulo
     },
     {
       number: "98%",
-      label: "Satisfacción Garantizada",
-      icon: "⭐"
+      label: "Conocimiento Práctico", // Cambia Satisfacción por un enfoque en la práctica
+      icon: "💡" // Icono de idea o solución
     },
     {
-      number: "$3,200",
-      label: "Promedio Mensual",
-      icon: "💰"
-    },
-    {
-      number: "97",
-      label: "Vidas Transformadas",
-      icon: "✨"
+      number: "+3 Horas", // Si puedes verificar un tiempo total de contenido o lecciones
+      label: "De Contenido Detallado",
+      icon: "⏱️" // Icono de tiempo
     }
   ]
 };
 
 // Trust Badges Data
 export const trustBadgesData = {
-  badges: [
-    {
-      icon: "✅",
-      text: "Garantía 30 Días",
-      description: "Reembolso total"
-    },
+  badges: [ 
     {
       icon: "🔒",
       text: "Pago 100% Seguro",
@@ -175,46 +170,46 @@ export const trustBadgesData = {
 // FAQ Data
 export const faqData = {
   title: "Preguntas Frecuentes",
-  subtitle: "Resolvemos todas tus dudas sobre el curso de P2P",
+  subtitle: "Resolvemos todas tus dudas sobre el Módulo 1 de Trading y el Bono P2P",
   faqs: [
     {
       question: "¿Funciona en mi país latinoamericano?",
-      answer: "Sí, el método P2P funciona en todos los países de Latinoamérica. Te proporcionamos todas las herramientas necesarias para empezar, incluso si algunas apps están bloqueadas en tu región. Incluye guía específica para sortear restricciones locales."
+      answer: "Sí, tanto el Trading de Futuros como el método P2P funcionan en la mayoría de los países de Latinoamérica. Te proporcionamos las guías necesarias para abrir y configurar tus cuentas en los exchanges (como Binance y Blofin) y sortear posibles restricciones locales."
     },
     {
-      question: "¿Necesito experiencia previa en trading?",
-      answer: "No necesitas ninguna experiencia previa. El curso está diseñado para principiantes absolutos. Empezarás desde cero y aprenderás todo paso a paso, desde crear cuentas hasta realizar tus primeras transacciones rentables."
+      question: "¿Necesito experiencia previa en Trading?",
+      answer: "No necesitas ninguna experiencia previa. El **Módulo 1** está diseñado para **principiantes absolutos**. Empezarás desde cero, aprendiendo la configuración de plataformas, fundamentos del mercado, tipos de órdenes y gestión de riesgo antes de operar."
     },
     {
-      question: "¿Cuánto dinero necesito para empezar?",
-      answer: "El mínimo para empezar es $100, pero recomiendo tener al menos $200 de capital inicial para mejores resultados. El curso incluye estrategias para maximizar ganancias con cualquier presupuesto y cómo reinvertir para crecer rápidamente."
+      question: "¿Qué capital inicial necesito para empezar a hacer Trading?",
+      answer: "Puedes empezar a operar Futuros con montos pequeños (por ejemplo, $10 o $50) dependiendo del exchange, gracias al apalancamiento. Sin embargo, para una gestión de riesgo adecuada, se recomienda que tu capital inicial sea manejable y que estés dispuesto a arriesgar solo lo que puedas permitirte perder."
     },
     {
-      question: "¿Cuánto ganaré realmente?",
-      answer: "Los resultados varían, pero la mayoría de estudiantes generan entre $50 a $200+ diarios trabajando 1 a 4 horas. Carlos (testimonio) ganaba $1,500 al mes como mesero; ahora genera entre $130-200 diarios, es decir, gana en 10 días lo que antes ganaba en un mes completo. El potencial depende de tu dedicación y aplicación del método."
+      question: "¿Qué puedo esperar ganar con este curso?",
+      answer: "El Módulo 1 es de **fundamentos y bases técnicas**, no podemos garantizar ninguna ganancia específica en Trading, ya que depende enteramente de tu aplicación, gestión de riesgo y las condiciones del mercado. **Sin embargo**, el curso incluye el **BONO P2P** que sí es un sistema comprobado que te puede ayudar a generar tus primeros ingresos adicionales, como lo ha demostrado mi comunidad anterior."
     },
     {
-      question: "¿Qué es la garantía de 30 días?",
-      answer: "Si realmente no generaste ni siquiera $1 con el método que enseño, evalúo tu caso específico para analizar qué estás haciendo mal y cómo deberías hacerlo correctamente para que generes ingresos. Estamos tan seguros de que transformará tu vida que respaldamos el curso con esta garantía."
+      question: "¿Cómo accedo al curso (Módulo 1 + Bono P2P) después de comprarlo?",
+      answer: "Inmediatamente después de la compra, serás redirigido automáticamente a la sección privada donde encontrarás todo el material necesario: videos del Módulo 1 de Trading, el curso completo de P2P, guías descargables y acceso a la comunidad privada."
     },
     {
-      question: "¿Cómo accedo al curso después de comprarlo?",
-      answer: "Inmediatamente después de la compra, serás redirigido automáticamente a la sección privada donde encontrarás todo el material necesario: videos, guías descargables y acceso a la comunidad privada las 24 horas del día."
+      question: "¿Qué incluye la garantía?",
+      answer: "Debido a la naturaleza volátil del Trading, no ofrecemos una garantía de retorno monetario en el Módulo 1. **La garantía se centra en el soporte:** si tienes dudas o no entiendes un concepto, me comprometo a analizar tu caso en la comunidad para asegurar que domines la base técnica y conceptual antes de avanzar."
     },
     {
-      question: "¿Necesito Internet muy rápido?",
-      answer: "No necesitas una conexión ultra rápida. Con una conexión normal de casa (5-10 Mbps) es más que suficiente. El trabajo P2P no requiere descargas grandes ni streaming constante, solo conexión estable."
+      question: "¿Necesito Internet muy rápido o una computadora potente?",
+      answer: "No. Con una conexión normal de casa (5-10 Mbps) es más que suficiente. La operativa de Trading y P2P se realiza en apps o web sin necesidad de descargas grandes o streaming constante. Puedes empezar con una computadora o incluso solo con tu celular."
     },
     {
-      question: "¿Puedo hacer esto mientras trabajo?",
-      answer: "Absolutamente. Muchos estudiantes lo hacen como trabajo secundario en sus horas libres. Puedes dedicarle 1 a 4 horas diarias (mañanas, tardes o noches) y seguir generando ingresos significativos. La flexibilidad es una de las mayores ventajas."
+      question: "¿Puedo estudiar esto mientras mantengo mi trabajo actual?",
+      answer: "Absolutamente. Tanto el estudio del Módulo 1 como el Trading (una vez que se opera) y el método P2P ofrecen una gran flexibilidad. Puedes dedicarle las horas que te sean posibles (mañanas, tardes o noches) y seguir construyendo una fuente de ingresos adicional."
     }
   ]
 };
 
 // Footer Data
 export const footerData = {
-  description: "Educación de calidad a precio justo • Resultados reales garantizados",
+  description: "Educación de calidad a precio justo • Fundamentos sólidos para tu futuro",
   copyright: "© 2025. Todos los derechos reservados."
 };
 
@@ -227,7 +222,7 @@ export const headerData = {
   navigation: [
     { label: "Mi Historia", to: "#video" },
     { label: "Problema", to: "#problema-solucion" },
-    { label: "Testimonios", to: "#testimonios" },
+    { label: "Compromiso", to: "#testimonios" },
     { label: "Qué Incluye", to: "#incluye" },
     { label: "FAQ", to: "#faq" },
     { label: "Comprar", to: "#comprar" }
@@ -239,6 +234,131 @@ export const headerData = {
   }
 };
 
+// Courses Data
+export interface CourseData {
+  id: string;
+  title: string;
+  subtitle: string;
+  description: string;
+  type: string;
+  lessons: number;
+  duration: string;
+  price: string;
+  gradientFrom: string;
+  gradientTo: string;
+  badge?: string;
+  logo?: string;
+  videoUrl?: string;
+}
+
+export const coursesData: CourseData[] = [
+  {
+    id: 'p2p',
+    title: 'Curso Completo de Trading P2P',
+    subtitle: 'De cero a experto',
+    description: 'Domina el arte de la compra y venta de criptomonedas a través de Binance P2P. Aprende estrategias avanzadas, gestión de riesgo y cómo generar ingresos consistentes desde cualquier lugar del mundo.',
+    type: 'Curso',
+    lessons: 1,
+    price: 'Incluido',
+    gradientFrom: '#ff72e1',
+    gradientTo: '#0072f5',
+    logo: '💰',
+    videoUrl: 'https://impkable.com/wp-content/uploads/2025/10/curso-p2p.mp4',
+    duration: '1 hora'
+  },
+  {
+    id: 'trading-module-1',
+    title: 'Trading de Futuros: Módulo 1',
+    subtitle: 'Fundamentos Esenciales',
+    description: 'Aprende Trading de Futuros en profundidad, partiendo de cero conocimiento en esta tecnología. Configuración de plataformas (Binance/Blofin), fundamentos del mercado, tipos de órdenes y gestión de riesgo.',
+    type: 'Curso',
+    lessons: 23,
+    price: 'Incluido',
+    gradientFrom: '#ff705b',
+    gradientTo: '#dc3545',
+    badge: 'MÓDULO 1',
+    logo: '📈',
+    duration: '2 horas'
+  }
+];
+
+// Trading Module 1 Syllabus Data
+export interface Lesson {
+  id: string;
+  title: string;
+  videoUrl?: string;
+  duration?: string;
+}
+
+export interface Section {
+  id: string;
+  title: string;
+  lessons: Lesson[];
+}
+
+
+export const tradingModule1Syllabus: Section[] = [
+  {
+    id: 'section-1',
+    title: '1 Configuración de la plataforma',
+    lessons: [
+      { id: '1-1', title: '1-1 Como descargar e instalar la App', duration: '2:14', videoUrl:'1/1-introduccion.mp4' },
+      { id: '1-2', title: '1-2 Como abrir una cuenta de Binance y Blofin', duration: '8:48', videoUrl:'1/2-descargar-app.mp4' },
+      { id: '1-3', title: '1-3 Como verificar la cuenta', duration: '6:51', videoUrl:'1/3-creacion-y-verificacion-de-cuentas.mp4'  },
+      { id: '1-4', title: '1-4 Como depositar en ambas plataformas', duration: '11:15' , videoUrl:'1/4-depositar-fondos.mp4' }
+    ]
+  },
+  {
+    id: 'section-2',
+    title: '2 Fundamentos del mercado',
+    lessons: [
+      { id: '2-1', title: '2-1 Diferencia entre spot y futuros', duration: '4:34', videoUrl:'2/1-spot-y-futuros.mp4' },
+      { id: '2-2', title: '2-2 Significado de aislado y cruzado', duration: '3:01', videoUrl:'2/2-aislado-y-cruzado.mp4' },
+      { id: '2-3', title: '2-3 Apalancamiento', duration: '4:21', videoUrl:'2/3-apalancamiento.mp4' },
+      { id: '2-4', title: '2-4 Diferencia entre Long (Largo) – y Short (Corto)', duration: '3:31', videoUrl:'2/4-long-y-short.mp4' }
+    ]
+  },
+  {
+    id: 'section-3',
+    title: '3 Ordenes y Ejecución',
+    lessons: [
+      { id: '3-1', title: '3-1 Diferencia entre Market Order y Limit Order', duration: '9:32', videoUrl:'3/1-limit-order-y- market-order.mp4' },
+      { id: '3-2', title: '3-2 Ordenes Stop-Limit y Stop-Market', duration: '7:53', videoUrl:'3/2-stop-limit-y-stop-market.mp4' },
+      { id: '3-3', title: '3-3 Ordenes Post-Only', duration: '2:26', videoUrl:'3/3-post-only.mp4' }
+    ]
+  },
+  {
+    id: 'section-4',
+    title: '4 Gestión de posición y Riesgo',
+    lessons: [
+      { id: '4-1', title: '4-1 Margen Inicial', duration: '4:41', videoUrl:'4/1-margen-inicial.mp4' },
+      { id: '4-2', title: '4-2 Tamaño de posición', duration: '2:49', videoUrl:'4/2-tamano-de-posicion.mp4' },
+      { id: '4-3', title: '4-3 Gestión del riesgo', duration: '1:00', videoUrl:'4/3-gestion-de-riesgo.mp4' },
+      { id: '4-4', title: '4-4 Stop Lost (SL) y Take Profit (TP)', duration: '7:43', videoUrl:'4/4-sl-y-tp.mp4' },
+      { id: '4-5', title: '4-5 Como abrir una entrada', duration: '4:15', videoUrl:'4/5-como-abrir-una-operacion.mp4' },
+      { id: '4-6', title: '4-6 Como cerrar una operación', duration: '5:17', videoUrl:'4/6-cerrar-operacion.mp4' },
+      { id: '4-7', title: '4-7 Como añadir margen, aumentar la liquidación y Precio de liquidación', duration: '3:13', videoUrl:'4/7-8-margen-y-liquidacion.mp4' }
+    ]
+  },
+  {
+    id: 'section-5',
+    title: '5 Cálculos y Costos',
+    lessons: [
+      { id: '5-1', title: '5-1 Que es PNL', duration: '2:12', videoUrl:'5/1-pnl.mp4' },
+      { id: '5-2', title: '5-2 Que es ROI', duration: '1:24', videoUrl:'5/2-roi.mp4' },
+      { id: '5-3', title: '5-3 Tasa de financiación (Funding Rate)', duration: '1:35', videoUrl:'5/3-funding-rate.mp4' },
+      { id: '5-4', title: '5-4 Tasa de comisión', duration: '2:32', videoUrl:'5/4-tasa-de-comision.mp4' }
+    ]
+  },
+  {
+    id: 'section-6',
+    title: '6 Revisión de Historial',
+    lessons: [
+      { id: '6-1', title: '6-1 Revisión de historial de posiciones', duration: '3:19', videoUrl:'6/1-historial.mp4' }
+    ]
+  }
+];
+
 // Export all data as a single object for easier imports
 export const appData = {
   problemSolution: problemSolutionData,
@@ -249,5 +369,7 @@ export const appData = {
   trustBadges: trustBadgesData,
   faq: faqData,
   footer: footerData,
-  header: headerData
+  header: headerData,
+  courses: coursesData,
+  tradingModule1Syllabus: tradingModule1Syllabus
 };

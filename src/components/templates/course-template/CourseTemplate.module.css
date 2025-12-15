@@ -1,0 +1,52 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.ctn_content {
+  flex: 1;
+  display: flex;
+  min-height: calc(100vh - 100px);
+  padding-top: 100px;
+  position: relative;
+}
+
+.courseContent {
+  flex: 1;
+  overflow-y: auto;
+  padding: 40px;
+  width: 100%;
+  max-width: var(--max-width);
+  margin-left: 400px;
+}
+
+/* Cuando no hay sidebar (curso P2P), centrar el contenido */
+.courseContent.noSidebar {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Responsive */
+@media screen and (max-width: 968px) {
+  .ctn_content{
+    padding-top: 150px;
+  }
+  .courseContent {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .ctn_content {
+    flex-direction: column;
+  }
+
+  .courseContent {
+    padding: 20px;
+    margin-left: 0;
+  }
+}
+

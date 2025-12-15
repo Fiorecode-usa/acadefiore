@@ -45,10 +45,10 @@ export const VideoSection: React.FC = () => {
       variants={containerVariants}
     >
       <div className={styles.container}>
-        <motion.div className={styles.sectionTitle} variants={titleVariants}>
-          <h2>De Emigrante a Libertad Financiera: Mi Historia</h2>
-          <p>Después de trabajar 15 horas al día como emigrante en Estados Unidos (construcción, delivery, limpieza, taxista, pintor), descubrí cómo generar $100 diarios trabajando solo unas horas desde casa con P2P. Este es mi testimonio personal de cómo transformé mi vida.</p>
-        </motion.div>
+      <motion.div className={styles.sectionTitle} variants={titleVariants}>
+        <h2>De Esfuerzo Duro a Control de Mi Tiempo: Mi Historia</h2>
+        <p>Después de trabajar 15 horas al día como emigrante en Estados Unidos (construcción, delivery, limpieza, taxista, pintor), descubrí cómo generar ingresos extra trabajando solo unas horas desde casa con Trading de Futuros y Criptomonedas. Este es mi testimonio personal de cómo transformé mi rutina para tener más tiempo para vivir.</p>
+      </motion.div>
 
         <motion.div className={styles.videoContainer} variants={itemVariants}>
           <div className={styles.videoWrapper}>
@@ -58,7 +58,7 @@ export const VideoSection: React.FC = () => {
               poster={VideoPoster}
               preload="metadata"
             >
-              <source src="https://impkable.com/wp-content/uploads/2025/10/mi-historia.mp4" type="video/mp4" />
+              <source src={import.meta.env.VITE_URL_CLOUDFRONT+"storage/video-landing.mp4"} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           </div>
@@ -74,9 +74,9 @@ export const VideoSection: React.FC = () => {
             <p>Trabajo menos horas, gano más dinero y tengo tiempo para enfocarme en lo que realmente me hace feliz</p>
           </div>
           <div className={styles.infoItem}>
-            <h3>El Curso Completo</h3>
-            <p>Aprende el sistema exacto que uso para generar $100+ diarios con P2P. Inversión: $97 una sola vez</p>
-          </div>
+            <h3>Módulo 1: Fundamentos Sólidos de Trading de Futuros Perpetuos</h3>
+            <p>Este módulo está diseñado para principiantes totales. Cubre desde la descarga e instalación de las plataformas (Binance, Blofin), la apertura de cuenta y los fundamentos esenciales del mercado (Spot vs. Futuros, Long/Short) hasta la correcta Gestión de Posición, Riesgo y Órdenes. Obtén la base técnica y conceptual que necesitas para operar con seguridad.</p>
+        </div>
         </motion.div>
       </div>
     </motion.section>

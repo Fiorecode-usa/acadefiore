@@ -3,7 +3,6 @@
   min-height: 100vh;
   position: relative;
   overflow: hidden;
-  padding: 20px;
 }
 
 .animatedBackground {
@@ -45,13 +44,7 @@
 
 /* Responsive */
 @media (max-width: 768px) {
-  .layout {
-    padding: 15px;
-  }
 }
 
 @media (max-width: 480px) {
-  .layout {
-    padding: 10px;
-  }
 }
