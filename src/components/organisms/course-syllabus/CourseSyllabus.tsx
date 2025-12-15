@@ -112,7 +112,7 @@ const CourseSyllabus: React.FC<CourseSyllabusProps> = ({
                   overflow: 'hidden'
                 }}
               >
-                {section.lessons.map((lesson, lessonIndex) => {
+                {section.lessons.map((lesson) => {
                   const isSelected = selectedLessonId === lesson.id
                   
                   return (

@@ -91,17 +91,6 @@ export const TradingCourseSection: React.FC = () => {
     }
   };
 
-  const titleVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: 0.7
-      }
-    }
-  };
-
   const handleContextMenu = (e: React.MouseEvent) => {
     e.preventDefault();
     return false;
