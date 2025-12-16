@@ -1,40 +1,7 @@
-import React, { useContext, useMemo } from "react";
 import { motion } from "framer-motion";
-import { AuthContext } from "../../../context/AuthContext";
-import { getIdToken } from "../../../config/services/token.services";
-import { jwtDecode } from "jwt-decode";
 import styles from "./CourseVideoSection.module.css";
 
-interface TokenPayload {
-  email?: string;
-  'cognito:username'?: string;
-  sub?: string;
-  [key: string]: any;
-}
-
 export const CourseVideoSection: React.FC = () => {
-  const { user } = useContext(AuthContext)!;
-  
-  // Obtener email del token si el usuario no está en el contexto
-  const userEmail = useMemo(() => {
-    if (user?.email) {
-      return user.email;
-    }
-    
-    // Intentar obtener el email del token
-    const idToken = getIdToken();
-    if (idToken) {
-      try {
-        const decoded = jwtDecode<TokenPayload>(idToken);
-        return decoded.email || decoded['cognito:username'] || decoded.sub || null;
-      } catch (error) {
-        console.error('Error decodificando token:', error);
-        return null;
-      }
-    }
-    
-    return null;
-  }, [user]);
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -98,13 +65,6 @@ export const CourseVideoSection: React.FC = () => {
               <source src={import.meta.env.VITE_URL_CLOUDFRONT+"cursos/p2p/1-arbitraje-p2p.mp4"} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
-            {userEmail && (
-              <div className={styles.watermark}>
-                <span className={styles.watermarkEmoji}>🔒</span>
-                <span className={styles.watermarkEmoji}>👁️</span>
-                <span className={styles.watermarkText}>{userEmail}</span>
-              </div>
-            )}
           </div>
         </motion.div>
 

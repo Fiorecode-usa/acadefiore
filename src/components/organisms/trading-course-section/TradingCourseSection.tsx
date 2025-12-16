@@ -1,44 +1,13 @@
-import React, { useContext, useMemo, useEffect } from "react";
+import React, { useEffect } from "react";
 import { motion } from "framer-motion";
-import { AuthContext } from "../../../context/AuthContext";
-import { getIdToken } from "../../../config/services/token.services";
-import { jwtDecode } from "jwt-decode";
 import { appData } from "../../../data/appData";
 import { useCourse } from "../../../context/CourseContext";
 import styles from "./TradingCourseSection.module.css";
 
-interface TokenPayload {
-  email?: string;
-  'cognito:username'?: string;
-  sub?: string;
-  [key: string]: any;
-}
-
 export const TradingCourseSection: React.FC = () => {
-  const { user } = useContext(AuthContext)!;
   const { selectedLessonId } = useCourse();
   const urlBaseCourse = import.meta.env.VITE_URL_CLOUDFRONT+'cursos/trading/futuros/modulo-1/'
   
-  // Obtener email del token si el usuario no está en el contexto
-  const userEmail = useMemo(() => {
-    if (user?.email) {
-      return user.email;
-    }
-    
-    // Intentar obtener el email del token
-    const idToken = getIdToken();
-    if (idToken) {
-      try {
-        const decoded = jwtDecode<TokenPayload>(idToken);
-        return decoded.email || decoded['cognito:username'] || decoded.sub || null;
-      } catch (error) {
-        console.error('Error decodificando token:', error);
-        return null;
-      }
-    }
-    
-    return null;
-  }, [user]);
 
   // Seleccionar la primera lección por defecto si no hay ninguna seleccionada
   useEffect(() => {
@@ -134,13 +103,6 @@ export const TradingCourseSection: React.FC = () => {
                       <source src={getVideoUrl(selectedLessonId)} type="video/mp4" />
                       Your browser does not support the video tag.
                     </video>
-                    {userEmail && (
-                      <div className={styles.watermark}>
-                        <span className={styles.watermarkEmoji}>🔒</span>
-                        <span className={styles.watermarkEmoji}>👁️</span>
-                        <span className={styles.watermarkText}>{userEmail}</span>
-                      </div>
-                    )}
                   </div>
                 </motion.div>
 
